@@ -2,9 +2,9 @@
 <html lang="en" data-theme="glass">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Lifafa — Little moments. Beautifully revealed.</title>
-<meta name="description" content="Interactive digital invitations you can open, play with and personalise. Order on WhatsApp.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c21d62'/%3E%3Cpath d='M5 10l11 8 11-8' stroke='%23fff' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+<title>Lifafa — Digital invitations, beautifully revealed</title>
+<meta name="description" content="Premium interactive digital invitations for weddings, birthdays and celebrations. Personalise and order on WhatsApp.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23191919'/%3E%3Cpath d='M7 11l9 7 9-7' stroke='%23B69A66' stroke-width='2' fill='none'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
   <div class="tools">
     <button class="btn icon" id="searchBtn" aria-label="Search designs">⌕</button>
     <button class="btn icon" id="themeBtn" aria-label="Switch theme" title="Switch theme">◐</button>
-    <a class="btn primary" id="contactBtn" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">Chat</a>
+    <a class="btn primary" id="contactBtn" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">WhatsApp</a>
     <button class="btn icon" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
   </div>
   <div class="chips" id="catnav" aria-label="Occasions"></div>
@@ -23,16 +23,17 @@
 <main id="app">
   <section class="hero">
     <div class="hero-copy">
-      <h1>Little moments.<br>Beautifully revealed.</h1>
-      <p>Invitations that open, scratch, unseal and sparkle. Try one, make it yours, and order it on WhatsApp.</p>
-      <div class="row"><a class="btn primary big" href="#explore">Explore designs</a><button class="btn big" id="surpriseBtn">Surprise me</button></div>
+      <p class="eyebrow">Digital invitation studio</p>
+      <h1>Invitations worth<br>opening twice.</h1>
+      <p>Interactive designs for weddings, birthdays and celebrations. Try one, personalise it, order on WhatsApp.</p>
+      <div class="row"><a class="btn primary big" href="#explore">Explore invitations</a><button class="btn big" id="surpriseBtn">Surprise me</button></div>
     </div>
-    <a class="hero-card" href="#/i/wed-wax-seal" aria-label="Open the wax seal invitation"><div class="env mini"><div class="card2"><h2>You're invited</h2></div><div class="pocket"></div><div class="flap"></div><span class="seal">L</span></div><span class="hint">Tap to open this one</span></a>
+    <a class="hero-card" href="#/i/wed-wax-seal" aria-label="Open the wax seal invitation"><div class="env mini"><div class="card2"><h2>You're invited</h2></div><div class="pocket"></div><div class="flap"></div><span class="seal">L</span></div><span class="hint">Featured · Wax seal</span></a>
   </section>
   <section><h2>Featured</h2><div class="grid" id="featured"></div></section>
   <section><h2>Occasions</h2><div class="grid cats" id="cats"></div></section>
-  <section><h2>Newly added</h2><div class="grid" id="newest"></div></section>
-  <section id="explore"><h2>Find your design</h2>
+  <section><h2>New</h2><div class="grid" id="newest"></div></section>
+  <section id="explore"><h2>Find a design</h2>
     <div class="filters surface">
       <label class="sr" for="q">Search</label><input id="q" type="search" placeholder="Search title or keyword" maxlength="40">
       <label class="sr" for="fc">Category</label><select id="fc"></select>
@@ -43,15 +44,15 @@
     <p id="count" class="muted" aria-live="polite"></p>
     <div class="grid" id="results"></div>
   </section>
-  <section id="how"><h2>How it works</h2><ol class="steps"><li class="surface"><b>Explore</b> Browse by occasion or search by style.</li><li class="surface"><b>Open</b> Play with the invitation like your guests will.</li><li class="surface"><b>Personalise</b> Add names, date and venue and watch it update.</li><li class="surface"><b>Order</b> Send your choices to us on WhatsApp.</li></ol></section>
-  <section id="ordering"><h2>Personalising and ordering</h2><div class="surface pad"><p>Changes you type here only live in your browser while you preview. Nothing is saved or sent until you tap <b>Order this design</b>, which opens WhatsApp with your design and details ready to send.</p></div></section>
+  <section id="how"><h2>How it works</h2><ol class="steps"><li class="surface"><b>Explore</b> Browse by occasion or search by style.</li><li class="surface"><b>Open</b> Experience the invitation as your guests will.</li><li class="surface"><b>Personalise</b> Add names, date and venue — it updates live.</li><li class="surface"><b>Order</b> Send your choices to us on WhatsApp.</li></ol></section>
+  <section id="ordering"><h2>Ordering</h2><div class="surface pad"><p>Edits stay in your browser until you tap <b>Order this design</b>. That opens WhatsApp with the design and your details ready to send. Nothing is stored on our servers.</p></div></section>
   <section id="faq"><h2>Questions</h2>
-    <details class="surface"><summary>Is my information stored?</summary><p>No. Personalisation runs in your browser and is lost when you close the page.</p></details>
-    <details class="surface"><summary>How do I order?</summary><p>Open a design, personalise it, tap Order this design and send the WhatsApp message.</p></details>
-    <details class="surface"><summary>Can I scratch with a keyboard?</summary><p>Yes. Scratch designs have a Reveal button for keyboard and assistive use.</p></details>
+    <details class="surface"><summary>Is my information stored?</summary><p>No. Personalisation runs only in your browser and is cleared when you leave the page.</p></details>
+    <details class="surface"><summary>How do I order?</summary><p>Open a design, personalise it, tap Order this design, and send the WhatsApp message.</p></details>
+    <details class="surface"><summary>Can I use a keyboard?</summary><p>Yes. Scratch designs include a Reveal control for keyboard and assistive use.</p></details>
   </section>
 </main>
-<footer><a class="wordmark" href="#/">Lifa<i>fa</i></a><p>Little moments. Beautifully revealed.</p><p><a id="igLink" target="_blank" rel="noopener" href="#">Instagram</a> · <a id="waLink" target="_blank" rel="noopener" href="#">WhatsApp</a></p></footer>
+<footer><a class="wordmark" href="#/">Lifa<i>fa</i></a><p class="muted">Digital invitations for modern celebrations.</p><p><a id="igLink" target="_blank" rel="noopener" href="#">Instagram</a> · <a id="waLink" target="_blank" rel="noopener" href="#">WhatsApp</a></p></footer>
 
 <div id="viewer" class="viewer" hidden role="dialog" aria-modal="true" aria-labelledby="vtitle">
   <div class="vbar">

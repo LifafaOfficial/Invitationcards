@@ -37,7 +37,14 @@ function openWA(url){const a=document.createElement("a");a.href=url;a.target="_b
 function card(inv){
   const c=el("article","card surface");
   const a=el("a","clink");a.href="#/i/"+inv.id;a.setAttribute("aria-label","Open "+inv.title);
-  const th=el("div","thumb");th.style.background=`linear-gradient(145deg,${inv.palette[0]},${inv.palette[1]})`;th.append(el("span","ico",inv.icon));
+  const th=el("div","thumb");
+  th.style.setProperty("--a",inv.palette[0]);th.style.setProperty("--b",inv.palette[1]);
+  th.style.background=`linear-gradient(165deg,${inv.palette[0]} 0%,${inv.palette[1]} 100%)`;
+  const art=el("div","thumb-art");
+  const ink=(()=>{try{const h=inv.palette[1].replace("#","");const n=parseInt(h.length===3?h[0]+h[0]+h[1]+h[1]+h[2]+h[2]:h,16);const r=(n>>16)&255,g=(n>>8)&255,b=n&255;return (0.299*r+0.587*g+0.114*b)<140?"#F7F5F0":"#191919"}catch(e){return"#191919"}})();
+  art.style.color=ink;
+  art.append(el("p","t-kicker",catName(inv.category)),el("p","t-title",inv.title),el("div","t-line"),el("span","t-ico",inv.icon));
+  th.append(art);
   const b=el("div","badges");if(inv.isNew)b.append(el("em","badge","New"));if(inv.featured)b.append(el("em","badge alt","Featured"));
   a.append(th,el("h3",null,inv.title),el("p","muted",catName(inv.category)));
   const f=el("button","fav",favs.has(inv.id)?"♥":"♡");f.setAttribute("aria-label","Favourite "+inv.title);f.setAttribute("aria-pressed",favs.has(inv.id));
