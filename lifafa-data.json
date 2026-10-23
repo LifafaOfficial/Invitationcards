@@ -1,0 +1,62 @@
+{
+  "kind": "lifafa-bundle",
+  "version": 2,
+  "exportedAt": "2026-10-23T11:32:39.949Z",
+  "invitations": [],
+  "config": {
+    "brand": {
+      "siteName": "Lifafa",
+      "tagline": "Little moments. Beautifully revealed.",
+      "logoText": "Lifafa",
+      "logoUrl": "",
+      "whatsappNumber": "919322719071",
+      "whatsappEnabled": true,
+      "instagramUrl": "https://www.instagram.com/lifafaofficial?exln=ejY0bHZndnJoajRx",
+      "accentColor": "#b99a62",
+      "musicEnabled": true,
+      "natureEnabled": true
+    },
+    "contact": {
+      "waLabel": "WhatsApp",
+      "homeMsg": "Hi {brand}! I'd like to know more about your invitations.",
+      "orderMsg": "Hi {brand}! I'd like to order this invitation design:\nDesign: {title}\nID: {id}\nCategory: {category}"
+    },
+    "homeVideo": {
+      "url": "https://res.cloudinary.com/seabajnp/video/upload/v1792742382/lifafa/qhk65p0tpiwsu2diblxw.mp4",
+      "enabled": true,
+      "loop": true,
+      "muted": true,
+      "overlay": 0.35
+    },
+    "photos": {
+      "birthday": "https://res.cloudinary.com/seabajnp/image/upload/v1792751818/lifafa/ubglwaaupannltnsp9py.png",
+      "anniversary": "https://res.cloudinary.com/seabajnp/image/upload/v1792751870/lifafa/suwly4nsz4a4nga6ozdy.png",
+      "wedding": "https://res.cloudinary.com/seabajnp/image/upload/v1792751920/lifafa/hcrnxt83enxcupbdwmbw.png",
+      "engagement": "https://res.cloudinary.com/seabajnp/image/upload/v1792751985/lifafa/q9nfhy6xi43dqzesggvd.png",
+      "baby": "https://res.cloudinary.com/seabajnp/image/upload/v1792752005/lifafa/sg0kuyr6hrfywypjyipn.png",
+      "party": "https://res.cloudinary.com/seabajnp/image/upload/v1792752255/lifafa/rckqde6copvprnyb4tpz.png",
+      "save-the-date": "https://res.cloudinary.com/seabajnp/image/upload/v1792752337/lifafa/bemu5cexnvakvswgedlz.png",
+      "festival": "https://res.cloudinary.com/seabajnp/image/upload/v1792752295/lifafa/mih4hvsuflt125hjkngq.png",
+      "friendship": "https://res.cloudinary.com/seabajnp/image/upload/v1792752358/lifafa/d1zvzbup3wa09lqsqn8i.png",
+      "graduation": "https://res.cloudinary.com/seabajnp/image/upload/v1792752376/lifafa/c5xxqkxfjnm41yatfiqr.png",
+      "special": "https://res.cloudinary.com/seabajnp/image/upload/v1792752387/lifafa/qwwwcqqz9mimudc9yzun.png",
+      "chaos": "https://res.cloudinary.com/seabajnp/image/upload/v1792752050/lifafa/oiygz7wti82wazumqgdg.png"
+    },
+    "music": {
+      "home": "https://res.cloudinary.com/seabajnp/video/upload/v1792749054/lifafa/okxgrcenx4nuidanalu4.mp3",
+      "birthday": "https://assets.mixkit.co/music/preview/mixkit-happy-children-113.mp3",
+      "anniversary": "https://assets.mixkit.co/music/preview/mixkit-romantic-motivation-33.mp3",
+      "wedding": "https://assets.mixkit.co/music/preview/mixkit-dreaming-big-31.mp3",
+      "engagement": "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
+      "baby": "https://assets.mixkit.co/music/preview/mixkit-sweet-life-111.mp3",
+      "party": "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-621.mp3",
+      "save-the-date": "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
+      "festival": "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3",
+      "friendship": "https://assets.mixkit.co/music/preview/mixkit-sun-and-his-daughter-580.mp3",
+      "graduation": "https://assets.mixkit.co/music/preview/mixkit-dreaming-big-31.mp3",
+      "special": "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
+      "chaos": "https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3"
+    },
+    "volume": 100
+  }
+}
